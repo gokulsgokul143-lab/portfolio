@@ -1,0 +1,109 @@
+.contact_wrapper svg {
+  font-size: 1em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact-form {
+  padding-top: 20px;
+
+  button {
+    float: right;
+    background-color: white;
+    color: #050f0b;
+  }
+
+  button:hover {
+    background-color: #5000ca;
+    color: white;
+  }
+}
+
+.form-flex {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.form-flex .native-field {
+  width: 100%;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.native-field {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.native-field label {
+  display: block;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0 0 7px 2px;
+}
+
+.native-field input,
+.native-field textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+  background: #fff !important;
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  caret-color: #111 !important;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding: 16px;
+  outline: none;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  user-select: text !important;
+}
+
+.native-field input {
+  height: 70px;
+}
+
+.native-field textarea {
+  min-height: 280px;
+  resize: vertical;
+}
+
+.native-field input::placeholder,
+.native-field textarea::placeholder {
+  color: #555 !important;
+  -webkit-text-fill-color: #555 !important;
+  opacity: 1 !important;
+}
+
+.native-field input:focus,
+.native-field textarea:focus {
+  border: 2px solid #5000ca;
+  padding: 15px;
+}
+
+.message-field {
+  margin-bottom: 15px;
+}
+
+.contact-success {
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .form-flex {
+    display: block;
+  }
+
+  .form-flex .native-field:first-child {
+    margin-bottom: 15px;
+  }
+}
